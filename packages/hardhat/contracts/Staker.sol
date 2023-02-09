@@ -17,7 +17,7 @@ contract Staker {
     bool public executeCalled;
     bool public openForWithdraw;
     uint256 public constant threshold = 1 ether;
-    uint256 public deadline = block.timestamp + 1 minutes;
+    uint256 public deadline = block.timestamp + 72 hours;
 
     event Stake(address indexed sender, uint256 amount);
     event Withdraw(address indexed sender, uint256 amount);
